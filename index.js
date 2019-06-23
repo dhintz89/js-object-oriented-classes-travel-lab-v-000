@@ -11,6 +11,11 @@ class Driver {
 
 class Route {
   constructor(beginningLocation, endingLocation) {
-    this.beginningLocation = 
+    this.beginningLocation = beginningLocation;
+    this.endingLocation = endingLocation;
+  }
+  
+  blocksTravelled() {
+    
   }
 }
