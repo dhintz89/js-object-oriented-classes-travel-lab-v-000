@@ -1,12 +1,7 @@
 class Driver {
   constructor(name, joinDate) {
     this.name = name;
-    this.joinDate = joinDate;
-  }
-  
-  startDate() {
-    const startDate = new Date(this.joinDate);
-    return startDate;
+    this.startDate = new Date(joinDate);
   }
   
   yearsExperienceFromBeginningOf(year) {
