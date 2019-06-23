@@ -27,6 +27,6 @@ class Route {
     ];
     const vert = this.endingLocation.vertical - this.beginningLocation.vertical;
     // const hor = eastWest.findIndex(function(el){el === this.endingLocation.horizontal}) - eastWest.findIndex(function(el){el===this.beginningLocation.horizontal});
-    return vert + hor;
+    return vert 
   }
 }
