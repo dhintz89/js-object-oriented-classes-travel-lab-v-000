@@ -26,7 +26,9 @@ class Route {
       '5th Avenue'
     ];
     const vert = this.endingLocation.vertical - this.beginningLocation.vertical;
-    const hor = eastWest.findIndex(function(el){el === this.endingLocation.horizontal}) - eastWest.findIndex(function(el){el===this.beginningLocation.horizontal});
+    let begHorPos = this.beginningLocation.horizontal;
+    let endHorPos = this.endingLocation.horizontal;
+    const hor = eastWest.findIndex(function(el){el === endHorPos}) - eastWest.findIndex(function(el){el===begHorPos});
     return vert + hor;
   }
 }
