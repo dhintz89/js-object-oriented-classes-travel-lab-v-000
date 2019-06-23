@@ -16,6 +16,7 @@ class Route {
   }
   
   blocksTravelled() {
-    
+    const eastWest = const vert = endingLocation.vertical - beginningLocation.vertical
+    const hor = 
   }
 }
