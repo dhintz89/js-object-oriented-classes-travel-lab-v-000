@@ -25,8 +25,8 @@ class Route {
       'Madison Avenue',
       '5th Avenue'
     ];
-    function hIndex(location) {return location}
-    const vert = endingLocation.vertical - beginningLocation.vertical;
-    const hor = eastWest.findIndex(hIndex(endingLocation.horizontal)) - eastWest.findIndex(hIndex(beginningLocation.horizontal));
+    const vert = this.endingLocation.vertical - this.beginningLocation.vertical;
+    const hor = eastWest.findIndex(function(el){el === this.endingLocation.horizontal}) - eastWest.findIndex(function(el){el === this.beginningLocation.horizontal});
+    return vert + hor;
   }
 }
