@@ -32,8 +32,12 @@ class Route {
     return vert + hor;
   }
   
-  estimatedTime() {
-    
+  estimatedTime(peak) {
+    if (peak === true) {
+      return blocksTravelled / 2;
+    } else {
+      return blocksTravelled / 3;
+    }
   }
 }
 
