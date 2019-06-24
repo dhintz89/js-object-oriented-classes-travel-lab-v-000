@@ -28,8 +28,8 @@ class Route {
     const vert = Math.abs(this.endingLocation.vertical - this.beginningLocation.vertical);
     let begHorPos = this.beginningLocation.horizontal;
     let endHorPos = this.endingLocation.horizontal;
-    debugger;
     const hor = Math.abs(eastWest.findIndex(function(el){el === endHorPos}) - eastWest.findIndex(function(el){el===begHorPos}));
+    debugger;
     return vert + hor;
   }
 }
