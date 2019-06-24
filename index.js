@@ -31,5 +31,9 @@ class Route {
     const hor = Math.abs(eastWest.findIndex(street => street === endHorPos) - eastWest.findIndex(street => street === begHorPos));
     return vert + hor;
   }
+  
+  estimatedTime() {
+    
+  }
 }
 
